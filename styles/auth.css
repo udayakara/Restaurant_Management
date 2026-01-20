@@ -1,0 +1,107 @@
+/* =========================
+   AUTH FORM STYLING
+   ========================= */
+
+   .auth-container {
+    min-height: 100vh;
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.6),
+        rgba(0, 0, 0, 0.6)
+      ),
+      url("../images/finalbg.avif") center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* padding: 20px; */
+  }
+  
+  .auth-card {
+    width: 100%;
+    max-width: 420px;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(12px);
+    border-radius: 14px;
+    padding: 30px;
+    color: #fff;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
+  }
+  
+  .auth-card h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 28px;
+    color: #ffd166;
+  }
+  
+  .auth-card p {
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 14px;
+    color: #ddd;
+  }
+  
+  .auth-input {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  
+  .auth-input input {
+    width: 100%;
+    padding: 12px 14px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    background: rgba(255, 255, 255, 0.85);
+  }
+  
+  .auth-input input:focus {
+    outline: 2px solid #ffd166;
+  }
+  
+  .auth-btn {
+    width: 100%;
+    padding: 12px;
+    background: #ffd166;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .auth-btn:hover {
+    background: #fcbf49;
+  }
+  
+  .auth-footer {
+    margin-top: 18px;
+    text-align: center;
+    font-size: 14px;
+  }
+  
+  .auth-footer span {
+    color: #ffd166;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  .auth-footer span:hover {
+    text-decoration: underline;
+  }
+  .auth-home {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+    color: #ffd166;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .auth-home:hover {
+    color: #fcbf49;
+    transform: translateX(-3px);
+  }
+  

@@ -1,0 +1,64 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SignUp</title>
+
+    <link rel="stylesheet" href="styles/auth.css" />
+  </head>
+  <body>
+    <div class="auth-container">
+      <div class="auth-card">
+        <h2>Create Account</h2>
+        <p>Join The Good Indian family 🍽️</p>
+
+        <form onsubmit="handleSignup(event)">
+          <div class="auth-input">
+            <input
+              type="text"
+              id="signupName"
+              placeholder="Full Name"
+              required
+            />
+          </div>
+
+          <div class="auth-input">
+            <input
+              type="email"
+              id="signupEmail"
+              placeholder="Email Address"
+              required
+            />
+          </div>
+
+          <div class="auth-input">
+            <input
+              type="password"
+              id="signupPassword"
+              placeholder="Password"
+              required
+            />
+          </div>
+
+          <button class="auth-btn">Sign Up</button>
+        </form>
+
+        <div class="auth-footer">
+          Already have an account?
+          <span onclick="location.href='login.html'">Login</span>
+        </div>
+        <div class="auth-home" onclick="location.href='index.html'">
+          ⬅ Home
+        </div>
+      </div>
+    </div>
+
+    <script src="scripts/auth.js"></script>
+    <script>
+      function handleSignup(e) {
+        e.preventDefault();
+        signUp(signupEmail.value, signupName.value, signupPassword.value);
+      }
+    </script>
+  </body>
+</html>
